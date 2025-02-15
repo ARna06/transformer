@@ -1,5 +1,5 @@
 import torch as t 
-from helper import Config
+from utils.helper import Config
 from transformer_lens import HookedTransformer
 
 reference_gpt2 = HookedTransformer.from_pretrained(

@@ -1,5 +1,5 @@
 import torch as t
-from transformer.train.utils.helpers import TransformerTrainingArgs, dataset_dict, get_log_probs
+from transformer.utils.train_helpers import TransformerTrainingArgs, dataset_dict, get_log_probs
 from architecture.transformer import DemoTransformer
 from torch.utils.data import DataLoader
 from jaxtyping import Int, Float

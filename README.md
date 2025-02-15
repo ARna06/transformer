@@ -1,4 +1,4 @@
-# Transformer from Scratch 
+# Transformer from Scratch
 
 ## Overview
 
@@ -37,7 +37,7 @@ For now the transformer only has the capability to train itself and provide auto
 
 ## File Structure
 
-```
+```{bash}
 ├── architeture
 |   ├── attention.py
 |   ├── blocks.py
@@ -52,6 +52,8 @@ For now the transformer only has the capability to train itself and provide auto
 |   ├── helper.py
 |   ├── tests.py
 |   ├── train_helpers.py
+├── main.py
+├── pyproject.toml
 ```
 
 ## References

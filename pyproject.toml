@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "transformer"
+version = "0.1.0"
+description = "An implementation of transformer from scratch"
+authors = ["abhik"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+torch = "^1.7.0"
+numpy = "^1.19.2"
+wandb = "^0.19.6"
+transformer_lens = "^2.14.0"
+jaxtyping = "^0.2.38"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

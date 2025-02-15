@@ -1,5 +1,7 @@
 from dataclasses import dataclass
-
+from jaxtyping import Float
+import torch
+import numpy as np
 @dataclass
 class Config:
     d_model: int = 768
@@ -12,3 +14,12 @@ class Config:
     d_mlp: int = 3072
     n_heads: int = 12
     n_layers: int = 12
+
+def gelu_new(
+    input: Float[torch.Tensor, "batch pos d_mlp"]
+) -> Float[torch.Tensor, "batch pos d_mlp"]:
+    return (
+        0.5
+        * input
+        * (1.0 + torch.tanh(np.sqrt(2.0 / np.pi) * (input + 0.044715 * torch.pow(input, 3.0))))
+    )
